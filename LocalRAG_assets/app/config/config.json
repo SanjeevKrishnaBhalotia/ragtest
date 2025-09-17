@@ -1,0 +1,52 @@
+{
+  "models": [
+    {
+      "name": "Llama 3.2 3B Instruct Q4_K_M",
+      "file_path": "models/llama-3.2-3b-instruct-q4_k_m.gguf",
+      "download_url": "https://huggingface.co/hugging-quants/Llama-3.2-3B-Instruct-Q4_K_M-GGUF/resolve/main/llama-3.2-3b-instruct-q4_k_m.gguf",
+      "size_gb": 1.9,
+      "ram_required_gb": 4,
+      "context_length": 131072,
+      "prompt_template": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{system_message}<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{user_message}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+      "system_message": "You are a helpful AI assistant. Answer based only on the provided context documents. If you cannot find the answer in the context, say so clearly."
+    },
+    {
+      "name": "Phi-3 Mini 4K Instruct Q4_K_M",
+      "file_path": "models/Phi-3-mini-4k-instruct-q4.gguf",
+      "download_url": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4.gguf",
+      "size_gb": 2.2,
+      "ram_required_gb": 4,
+      "context_length": 4096,
+      "prompt_template": "<|system|>\n{system_message}<|end|>\n<|user|>\n{user_message}<|end|>\n<|assistant|>\n",
+      "system_message": "You are a helpful AI assistant. Answer based only on the provided context documents. If you cannot find the answer in the context, say so clearly."
+    },
+    {
+      "name": "Llama 3.2 1B Instruct Q4_K_M (Ultra Lightweight)",
+      "file_path": "models/llama-3.2-1b-instruct-q4_k_m.gguf",
+      "download_url": "https://huggingface.co/hugging-quants/Llama-3.2-1B-Instruct-Q4_K_M-GGUF/resolve/main/llama-3.2-1b-instruct-q4_k_m.gguf",
+      "size_gb": 0.8,
+      "ram_required_gb": 2,
+      "context_length": 131072,
+      "prompt_template": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{system_message}<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{user_message}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+      "system_message": "You are a helpful AI assistant. Answer based only on the provided context documents. If you cannot find the answer in the context, say so clearly."
+    }
+  ],
+  "database_settings": {
+    "encryption_algorithm": "AES-256",
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "max_chunks_per_query": 5,
+    "embedding_model": "all-MiniLM-L6-v2"
+  },
+  "ui_settings": {
+    "theme": "light",
+    "window_size": [1200, 800],
+    "auto_save": true,
+    "max_recent_queries": 10
+  },
+  "security_settings": {
+    "auto_lock_minutes": 30,
+    "require_password_on_startup": true,
+    "audit_logging": true
+  }
+}

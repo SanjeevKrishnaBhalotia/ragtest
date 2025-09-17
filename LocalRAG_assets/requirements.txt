@@ -1,0 +1,24 @@
+# Core RAG Framework
+haystack-ai==2.7.0
+chromadb==0.5.18
+sentence-transformers==3.2.1
+
+# LLM Inference
+llama-cpp-python==0.2.95
+
+# GUI Framework
+PyQt6==6.8.0
+
+# Encryption and Security  
+cryptography==43.0.3
+
+# Document Processing
+PyPDF2==3.0.1
+python-docx==1.1.2
+openpyxl==3.1.5
+pandas==2.2.3
+
+# Utilities
+requests==2.32.3
+tqdm==4.67.1
+jinja2==3.1.5
